@@ -11,10 +11,10 @@ public class SftpClient {
     private FilesDownloader downloader;
 
     public void connect() {
-        String username = "analyst";
-        String host = "10.36.81.13";
+        String username = "username";
+        String host = "ip";
         int portnumber = 22;
-        String password = "jz9#~hu@";
+        String password = "password";
         try {
             JSch jSch = new JSch();
             session = jSch.getSession(username, host, portnumber);

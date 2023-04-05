@@ -30,7 +30,7 @@ public class SftpClient {
 
     public void upload() {
 
-        String dist = "/opt/ftp-data/minzdrav/upload";
+        String dist = "dist";
         File directory = new File(downloader.createLocalDir());
         File[] allContents = directory.listFiles();
         Channel channel = null;

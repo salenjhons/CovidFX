@@ -179,11 +179,11 @@ public class FilesDownloader {
         DesiredCapabilities cap = DesiredCapabilities.chrome();
         cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         cap.setCapability(ChromeOptions.CAPABILITY, options);
-        String login = "a.chernenko";
-        String password = "ltAg8K4V";
+        String login = "login";
+        String password = "password";
         WebDriver driver = new ChromeDriver(options);
         System.out.println("Connecting to SCMKS.RU");
-        String url = "https://scmks.ru/login";
+        String url = "url";
         driver.get(url);
         driver.findElement(By.xpath("//*[@id=\"Username\"]")).sendKeys(login);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

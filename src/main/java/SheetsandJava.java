@@ -21,7 +21,7 @@ import java.util.*;
 public class SheetsandJava {
     public static Sheets sheetsService;
     public static String APPLICATION_NAME = "Covid19 Docs";
-    public static String SPREADSHEET_ID = "1flmCnO5e-_JapcqwsnIzDPwFHgTIlxFYcy-xs_y65Vw";
+    public static String SPREADSHEET_ID = "ID";
 
 
     private static Credential authorize () throws IOException, GeneralSecurityException {
@@ -112,19 +112,6 @@ public class SheetsandJava {
             dataRow.add(someData);
             writeData.add(dataRow);
         }
-
-/*
-        sheetsService = getSheetsService();
-        ValueRange body = new ValueRange()
-                .setMajorDimension("COLUMNS")
-                .setValues(writeData);
-        UpdateValuesResponse result = sheetsService.spreadsheets().values()
-                .update(SPREADSHEET_ID,range,body)
-                .setValueInputOption("RAW")
-                .execute();
-
-
-*/
 
         ValueRange vr = new ValueRange().setValues(writeData).setMajorDimension("ROWS");
 

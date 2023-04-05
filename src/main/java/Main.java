@@ -36,7 +36,7 @@ public class Main {
 
 
        FilesDownloader filesDownloader = new FilesDownloader();
-        String url = "https://xn--j1ab.xn--h1ae9a.xn--p1ai/auth/?backurl=%2Fdocs%2Fmaterials%2Fpath%2F%25D0%259C%25D0%25BE%25D0%25BD%25D0%25B8%25D1%2582%25D0%25BE%25D1%2580%25D0%25B8%25D0%25BD%25D0%25B3%2520%25D0%25BA%25D0%25BB%25D1%258E%25D1%2587%25D0%25B5%25D0%25B2%25D1%258B%25D1%2585%2520%25D0%25BF%25D0%25BE%25D0%25BA%25D0%25B0%25D0%25B7%25D0%25B0%25D1%2582%25D0%25B5%25D0%25BB%25D0%25B5%25D0%25B9%2F";
+        String url = "url";
         filesDownloader.getHtmlCode(url);
                 for (String s : FilesDownloader.urls) {
                     System.out.println(filesDownloader.parseString(filesDownloader.getHtmlCode(s)));
